@@ -3,4 +3,5 @@ class Fish:
 	var name : String = ""
 	var description : String = ""
 
-	func apply() -> void: pass
+
+	func apply(player_manager) -> void: pass

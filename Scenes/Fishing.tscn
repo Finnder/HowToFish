@@ -1,3 +1,8 @@
-[gd_scene format=3 uid="uid://byi164j60wobw"]
+[gd_scene load_steps=2 format=3 uid="uid://byi164j60wobw"]
+
+[ext_resource type="AudioStream" uid="uid://bwm3u0sbj0rh6" path="res://Assets/Sounds/Fishing_-_Main_menu.mp3" id="1_eya8s"]
 
 [node name="Fishing" type="Node2D"]
+
+[node name="Music_BG" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_eya8s")

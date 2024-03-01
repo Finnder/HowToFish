@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @onready var sprite_2d: AnimatedSprite2D = $Sprite2D
 
-var movement_speed = 300.0
+var movement_speed = 600.0
 
 var attack_speed = 1
 var attack_damage = 1
@@ -19,4 +19,5 @@ func movement():
 	else:
 		sprite_2d.animation = "move"
 
+	velocity.normalized()
 	move_and_slide()
