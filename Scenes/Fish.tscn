@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4joaeir1nmcp"]
+
+[ext_resource type="Texture2D" uid="uid://bypd8l48ax7a6" path="res://Assets/icon.svg" id="1_qfr40"]
+[ext_resource type="Script" path="res://Scripts/Fish.gd" id="1_xn6qb"]
+
+[node name="Fish" type="Sprite2D"]
+position = Vector2(618, 417)
+texture = ExtResource("1_qfr40")
+script = ExtResource("1_xn6qb")
