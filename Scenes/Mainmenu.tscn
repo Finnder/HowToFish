@@ -21,6 +21,7 @@ offset_bottom = 347.0
 text = "Play"
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 64.0
 offset_top = 512.0
 offset_right = 320.0
@@ -28,6 +29,7 @@ offset_bottom = 603.0
 text = "Exit"
 
 [node name="Options" type="Button" parent="."]
+layout_mode = 0
 offset_left = 64.0
 offset_top = 384.0
 offset_right = 320.0
