@@ -1,0 +1,24 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://cpjv1ip28myvw"]
+
+[ext_resource type="Texture2D" uid="uid://bypd8l48ax7a6" path="res://Assets/icon.svg" id="1_tg5dq"]
+
+[resource]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tg5dq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
