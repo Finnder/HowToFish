@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://3nd07ld7xl1f"]
+[gd_scene load_steps=3 format=3 uid="uid://3nd07ld7xl1f"]
 
+[ext_resource type="Theme" uid="uid://d2sx8oefda27p" path="res://Assets/MainTheme.tres" id="1_jpi0d"]
 [ext_resource type="Script" path="res://Scripts/AboutPage.gd" id="1_nl4ep"]
 
 [node name="About Page" type="Control"]
@@ -9,12 +10,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_jpi0d")
 
 [node name="Game name" type="Label" parent="."]
 layout_mode = 0
 offset_top = 32.0
 offset_right = 1152.0
 offset_bottom = 128.0
+theme = ExtResource("1_jpi0d")
 theme_override_font_sizes/font_size = 60
 text = "How To Fish"
 horizontal_alignment = 1
