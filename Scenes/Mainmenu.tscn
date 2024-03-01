@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkakhuq8emiam"]
+[gd_scene load_steps=3 format=3 uid="uid://xlb4g66u1fvo"]
 
 [ext_resource type="Script" path="res://Scripts/Mainmenu.gd" id="1_n8egg"]
 [ext_resource type="Texture2D" uid="uid://bypd8l48ax7a6" path="res://Assets/icon.svg" id="2_3tpym"]
@@ -21,6 +21,7 @@ offset_bottom = 347.0
 text = "Play"
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 64.0
 offset_top = 512.0
 offset_right = 320.0
@@ -28,6 +29,7 @@ offset_bottom = 603.0
 text = "Exit"
 
 [node name="Options" type="Button" parent="."]
+layout_mode = 0
 offset_left = 64.0
 offset_top = 384.0
 offset_right = 320.0

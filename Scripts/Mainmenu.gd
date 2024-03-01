@@ -13,7 +13,7 @@ func _process(delta):
 
 func _on_play_pressed():
 	# change the scene
-	get_tree().change_scene_to_file("res://Scenes/Mainmenu.tscn");
+	get_tree().change_scene_to_file("res://Scenes/Combat.tscn");
 
 
 func _on_options_pressed():
