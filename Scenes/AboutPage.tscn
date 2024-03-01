@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://3nd07ld7xl1f"]
+
+[ext_resource type="Script" path="res://Scripts/AboutPage.gd" id="1_nl4ep"]
+
+[node name="About Page" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Game name" type="Label" parent="."]
+layout_mode = 0
+offset_top = 32.0
+offset_right = 1152.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 60
+text = "How To Fish"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 512.0
+offset_right = 768.0
+offset_bottom = 608.0
+text = "Back to main menu"
+script = ExtResource("1_nl4ep")
+
+[node name="MadeBy" type="Label" parent="."]
+layout_mode = 0
+offset_top = 128.0
+offset_right = 1152.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 40
+text = "Made by:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Contributors" type="Label" parent="."]
+layout_mode = 0
+offset_top = 224.0
+offset_right = 1152.0
+offset_bottom = 480.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Main menu" to="Main menu" method="_on_back_pressed"]

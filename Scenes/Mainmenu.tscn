@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkakhuq8emiam"]
+
+[ext_resource type="Script" path="res://Scripts/Mainmenu.gd" id="1_n8egg"]
+[ext_resource type="Texture2D" uid="uid://bypd8l48ax7a6" path="res://Assets/icon.svg" id="2_3tpym"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n8egg")
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 320.0
+offset_bottom = 347.0
+text = "Play"
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 512.0
+offset_right = 320.0
+offset_bottom = 603.0
+text = "Exit"
+
+[node name="Options" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 384.0
+offset_right = 320.0
+offset_bottom = 475.0
+text = "Options"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 60
+text = "How To Fish"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="About" type="Button" parent="."]
+layout_mode = 0
+offset_left = 992.0
+offset_right = 1152.0
+offset_bottom = 64.0
+text = "About"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(800, 400)
+scale = Vector2(4.5, 3.25)
+texture = ExtResource("2_3tpym")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="About" to="." method="_on_about_pressed"]
