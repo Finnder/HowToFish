@@ -1,4 +1,5 @@
 extends Control
+@onready var fish: Sprite2D = $Fish
 
 
 # Called when the node enters the scene tree for the first time.
@@ -10,6 +11,9 @@ func _ready():
 func _process(delta):
 	pass
 
+
+func fish_anim():
+	pass
 
 func _on_play_pressed():
 	# change the scene
