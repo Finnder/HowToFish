@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://1isiwq4kvu28"]
+[gd_scene load_steps=3 format=3 uid="uid://dbpfcrh2g4w30"]
 
 [ext_resource type="Script" path="res://Scripts/GameUI.gd" id="1_b1b8m"]
 [ext_resource type="Texture2D" uid="uid://bypd8l48ax7a6" path="res://Assets/icon.svg" id="2_775aw"]
@@ -25,12 +25,14 @@ offset_bottom = 55.0
 text = "Movement Speed: "
 
 [node name="Info atk speed" type="Label" parent="."]
+layout_mode = 0
 offset_top = 64.0
 offset_right = 256.0
 offset_bottom = 87.0
 text = "Attack Speed: "
 
 [node name="Info atk dmg" type="Label" parent="."]
+layout_mode = 0
 offset_top = 96.0
 offset_right = 256.0
 offset_bottom = 119.0

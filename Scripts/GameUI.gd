@@ -8,4 +8,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$"Info move speed".text = "Movement speed: " + str(get_parent().speed_movement)
+	$"Info move speed".text = "Movement speed: " + str(get_parent().movement_speed)
