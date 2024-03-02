@@ -29,10 +29,14 @@ func _physics_process(delta):
  
 	# Check if the enemy is in a 3px range of the player, if not move to the target position
 	if position.distance_to(player_position) > 3:
+		# Set player_position to the position of the player node
+		player_position = player.position
+	# Calculate the target position
+		target_position = (player_position - position).normalized()
 		var vec = target_position * speed
-		#velocity.y = 
-		#velocity.x = 
-		velocity = target_position
+		velocity.y = (player.position.y - position.y) 
+		velocity.x = (player.position.x - position.x) 
+		#velocity =
 		move_and_slide()
 		look_at(player_position)
 

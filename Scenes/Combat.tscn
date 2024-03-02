@@ -1,12 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhn52pgmahssr"]
 
 [ext_resource type="PackedScene" uid="uid://g0mlwt8aqc78" path="res://Scenes/Player.tscn" id="1_65ihi"]
-[ext_resource type="PackedScene" uid="uid://baomelpfwlnl4" path="res://Scenes/Enemy.tscn" id="2_ryf6g"]
+[ext_resource type="PackedScene" uid="uid://baomelpfwlnl4" path="res://Scenes/enemy.tscn" id="2_ryf6g"]
 
 [node name="Combat" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_65ihi")]
-position = Vector2(132, 125)
+position = Vector2(762, 395)
 
 [node name="Enemy" parent="." instance=ExtResource("2_ryf6g")]
-position = Vector2(500, 233)
+position = Vector2(356, 236)
