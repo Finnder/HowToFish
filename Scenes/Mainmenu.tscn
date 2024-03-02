@@ -20,6 +20,21 @@ grow_vertical = 2
 theme = ExtResource("1_ur10g")
 script = ExtResource("1_n8egg")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+material = ExtResource("4_6xps5")
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 1150.0
+offset_bottom = 643.0
+texture = SubResource("GradientTexture1D_xmj0o")
+
+[node name="Fish" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(753, 397)
+scale = Vector2(18.8125, 13.75)
+texture = ExtResource("3_2egje")
+
 [node name="Play" type="Button" parent="."]
 layout_mode = 0
 offset_left = 64.0
@@ -64,19 +79,6 @@ offset_right = 1135.0
 offset_bottom = 79.0
 theme_override_font_sizes/font_size = 30
 text = "About"
-
-[node name="Fish" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(749, 394)
-scale = Vector2(18.8125, 13.75)
-texture = ExtResource("3_2egje")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-material = ExtResource("4_6xps5")
-layout_mode = 0
-offset_right = 1154.0
-offset_bottom = 646.0
-texture = SubResource("GradientTexture1D_xmj0o")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
