@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://g0mlwt8aqc78"]
+[gd_scene load_steps=5 format=3 uid="uid://g0mlwt8aqc78"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_xdked"]
 [ext_resource type="SpriteFrames" uid="uid://cpjv1ip28myvw" path="res://Assets/SpriteFrames/player.tres" id="2_67cxk"]
+[ext_resource type="PackedScene" uid="uid://1isiwq4kvu28" path="res://Scenes/GameUI.tscn" id="2_sovxi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hi5x7"]
 size = Vector2(128, 127)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_xdked")
+
+[node name="GameUI" parent="." instance=ExtResource("2_sovxi")]
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_67cxk")
