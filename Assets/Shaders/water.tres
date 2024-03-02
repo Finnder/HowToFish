@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://d35nm4jv353b7"]
+
+[ext_resource type="Shader" path="res://Assets/Water.gdshader" id="1_5bqps"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_pwsjm"]
+frequency = 0.0278
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5bgyg"]
+noise = SubResource("FastNoiseLite_pwsjm")
+
+[resource]
+shader = ExtResource("1_5bqps")
+shader_parameter/transparency = 1.0
+shader_parameter/color0 = Color(0.32549, 0.670588, 0.65098, 1)
+shader_parameter/color1 = Color(0.72549, 0.956863, 0.890196, 1)
+shader_parameter/color2 = Color(0.584314, 0.898039, 0.847059, 1)
+shader_parameter/color3 = Color(0.956863, 0.956863, 0.956863, 1)
+shader_parameter/color4 = Color(0.92549, 0.92549, 0.92549, 1)
+shader_parameter/color5 = Color(0.827451, 0.827451, 0.827451, 1)
+shader_parameter/Direction1 = Vector2(1, 1)
+shader_parameter/Direction2 = Vector2(1, 1)
+shader_parameter/Speed1 = 0.08
+shader_parameter/Speed2 = 0.08
+shader_parameter/pixel_size = 32
+shader_parameter/heatAmplitude = 0.124
+shader_parameter/heatPeriod = 2.0
+shader_parameter/heatPhaseShift = 3.0
+shader_parameter/heatUpperLimit = null
+shader_parameter/noise = SubResource("NoiseTexture2D_5bgyg")

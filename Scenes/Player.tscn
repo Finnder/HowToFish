@@ -11,6 +11,11 @@ size = Vector2(128, 127)
 script = ExtResource("1_xdked")
 
 [node name="GameUI" parent="." instance=ExtResource("3_ky228")]
+offset_left = -1144.0
+offset_top = -638.0
+offset_right = -1144.0
+offset_bottom = -638.0
+scale = Vector2(1.96961, 2.00412)
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_67cxk")

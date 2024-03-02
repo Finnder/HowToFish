@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://xlb4g66u1fvo"]
+[gd_scene load_steps=7 format=3 uid="uid://xlb4g66u1fvo"]
 
 [ext_resource type="Script" path="res://Scripts/Mainmenu.gd" id="1_n8egg"]
 [ext_resource type="Theme" uid="uid://d2sx8oefda27p" path="res://Assets/MainTheme.tres" id="1_ur10g"]
-[ext_resource type="Texture2D" uid="uid://bglp5yh3ibyos" path="res://Assets/Art/Sea_angel.png" id="3_0h71f"]
+[ext_resource type="Texture2D" uid="uid://bh561buj3dekf" path="res://Assets/Art/Fish/Squid.png" id="3_2egje"]
+[ext_resource type="Material" uid="uid://d35nm4jv353b7" path="res://Assets/Shaders/water.tres" id="4_6xps5"]
+
+[sub_resource type="Gradient" id="Gradient_nr6um"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xmj0o"]
+gradient = SubResource("Gradient_nr6um")
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -63,7 +69,14 @@ text = "About"
 texture_filter = 1
 position = Vector2(749, 394)
 scale = Vector2(18.8125, 13.75)
-texture = ExtResource("3_0h71f")
+texture = ExtResource("3_2egje")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = ExtResource("4_6xps5")
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 646.0
+texture = SubResource("GradientTexture1D_xmj0o")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfthl6s1wvnkb"
-path="res://.godot/imported/Old_boot.png-261a2904f2e2ccdcc2bd26b8963f359a.ctex"
+uid="uid://bglp5yh3ibyos"
+path="res://.godot/imported/Sea_angel.png-929bd67b16d99e5082e35112b9203f00.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Old_boot.png"
-dest_files=["res://.godot/imported/Old_boot.png-261a2904f2e2ccdcc2bd26b8963f359a.ctex"]
+source_file="res://Assets/Art/Fish/Sea_angel.png"
+dest_files=["res://.godot/imported/Sea_angel.png-929bd67b16d99e5082e35112b9203f00.ctex"]
 
 [params]
 

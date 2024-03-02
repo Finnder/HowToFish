@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dowm5lh1n17t2"
-path="res://.godot/imported/Turtle.png-e4f26b7a13d688cfaa4dbd7d3a9a5610.ctex"
+uid="uid://cv5yf5ihj8yv1"
+path="res://.godot/imported/Blue_fish.png-316d70976d384d83c4b39d9b46a5611a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Turtle.png"
-dest_files=["res://.godot/imported/Turtle.png-e4f26b7a13d688cfaa4dbd7d3a9a5610.ctex"]
+source_file="res://Assets/Art/Fish/Blue_fish.png"
+dest_files=["res://.godot/imported/Blue_fish.png-316d70976d384d83c4b39d9b46a5611a.ctex"]
 
 [params]
 
