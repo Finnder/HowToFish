@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://g0mlwt8aqc78"]
+[gd_scene load_steps=5 format=3 uid="uid://g0mlwt8aqc78"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="1_xdked"]
 [ext_resource type="SpriteFrames" uid="uid://cpjv1ip28myvw" path="res://Assets/SpriteFrames/player.tres" id="2_67cxk"]
+[ext_resource type="PackedScene" uid="uid://dbpfcrh2g4w30" path="res://Scenes/GameUI.tscn" id="3_ky228"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hi5x7"]
 size = Vector2(128, 127)
@@ -10,6 +11,13 @@ size = Vector2(128, 127)
 position = Vector2(1053, 518)
 script = ExtResource("1_xdked")
 
+[node name="GameUI" parent="." instance=ExtResource("3_ky228")]
+offset_left = -1144.0
+offset_top = -638.0
+offset_right = -1144.0
+offset_bottom = -638.0
+scale = Vector2(1.96961, 2.00412)
+
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("2_67cxk")
 animation = &"idle"
@@ -17,3 +25,6 @@ animation = &"idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_hi5x7")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.5, 0.5)

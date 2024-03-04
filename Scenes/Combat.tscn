@@ -3,7 +3,13 @@
 [ext_resource type="PackedScene" uid="uid://g0mlwt8aqc78" path="res://Scenes/Player.tscn" id="1_65ihi"]
 [ext_resource type="PackedScene" uid="uid://baomelpfwlnl4" path="res://Scenes/enemy.tscn" id="2_ryf6g"]
 
+
 [node name="Combat" type="Node2D"]
+
+[node name="BG" type="Sprite2D" parent="."]
+position = Vector2(10.5001, 37.4999)
+scale = Vector2(35.7344, 22.7031)
+texture = SubResource("GradientTexture2D_m8y61")
 
 [node name="Player" parent="." instance=ExtResource("1_65ihi")]
 position = Vector2(762, 395)
