@@ -8,6 +8,7 @@
 size = Vector2(128, 127)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(1053, 518)
 script = ExtResource("1_xdked")
 
 [node name="GameUI" parent="." instance=ExtResource("3_ky228")]

@@ -1,12 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dhn52pgmahssr"]
+[gd_scene load_steps=3 format=3 uid="uid://dhn52pgmahssr"]
 
 [ext_resource type="PackedScene" uid="uid://g0mlwt8aqc78" path="res://Scenes/Player.tscn" id="1_65ihi"]
-[ext_resource type="Script" path="res://Scripts/MapGenerator.gd" id="2_uasli"]
+[ext_resource type="PackedScene" uid="uid://baomelpfwlnl4" path="res://Scenes/enemy.tscn" id="2_ryf6g"]
 
-[sub_resource type="Gradient" id="Gradient_30u1j"]
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_m8y61"]
-gradient = SubResource("Gradient_30u1j")
 
 [node name="Combat" type="Node2D"]
 
@@ -16,6 +12,7 @@ scale = Vector2(35.7344, 22.7031)
 texture = SubResource("GradientTexture2D_m8y61")
 
 [node name="Player" parent="." instance=ExtResource("1_65ihi")]
+position = Vector2(762, 395)
 
-[node name="MapGenerator" type="Node" parent="."]
-script = ExtResource("2_uasli")
+[node name="Enemy" parent="." instance=ExtResource("2_ryf6g")]
+position = Vector2(356, 236)
